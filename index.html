@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WEATHER NEW</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div id="tittel"></div>
+    <h1>Today is..</h1><p id="date"></p>
+    
+    <input type="text" name="city-name" id="city" placeholder="Enter the city name">
+
+    <button id="getMessage">
+        Enter
+    </button>
+    <div class="container">
+            <div  class="tittel1">
+                <h1 id="country"></h1>
+                <div id="icon"></div>
+                <div id="graphic" class="weather-icon">  </div>
+                <div id="description" class="important-info text ham"> </div>
+                <div id="celsius" class="temp-info"> </div>
+                <div id="farenheit" class="temp-info">  </div>
+                
+            </div>
+    </div>
+
+    
+    
+
+    <div class="description-container">
+
+            <div class="block-1">
+              <div class="text">
+                <span>Max:</span>
+                <span id="max" class="important-info"> </span>
+              </div>
+              <div class="text">
+                <span>Min:</span>
+              <span id="min" class='important-info'> </span>
+              </div>
+              
+            </div>
+
+            <div class="block-2">
+              <div id="longitude" class=" text important-info">Lon: </div>
+              <div id="latitude" class="text important-info">Lat: </div>
+            </div>
+
+            <div class="block-3">
+              <div id="humidity" class="text important-info">   Humidity: </div>
+              <div id="pressure" class="text important-info"> Pressure: </div>
+              <div id="windSpeed" class="text important-info"> Winds: </div>
+            </div>
+          </div>
+  <!------button-->
+          <div class="container-button">
+                <div class="switch-button">
+                  <span class="active"></span>
+                  <button class="text switch-button-case left active-case">Celsius</button>
+                  <button class="text switch-button-case right">Farenheit</button>
+                </div>
+          </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="json.js"></script>
+    <!-- <script src="ajax.js"></script>-->
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+body {
+    text-align: center;
+    font-family: "Helvetica", sans-serif;
+
+    background-image: url(img/img1.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100%;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  #city{
+      height: 35px;
+      border-radius: 5px;
+
+  }
+  /*------------
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 40px 0px 10px 0;
+    text-align: center;
+  }*/
+ 
+
+ /*-----search -----*/ 
+  button {
+    color: white;
+    background-color: #4791d0;
+    border-radius: 5px;
+    border: 1px solid #4791d0;
+    padding: 5px 10px 8px 10px;
+  }
+  button:hover {
+    background-color: #0F5897;
+    border: 1px solid #0F5897;
+  }
+  /*----------*
+  .container{
+    background-color: #0F5897;
+}
+/*....tempreture.....*/
+.temp-info {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 65px;
+    color: black;
+    font-weight: 600;
+    margin: 25px;
+  }
+  /*....box descripton........*/
+  .description-container{
+    background: #efefef;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 450px;
+    margin: 0 auto;
+    padding:20px 0px;
+  }
+  
+/*......some tabel.........*/
+.block-1 {
+    grid-column: 1;
+    padding: 10px;
+  }
+  .block-2{
+    grid-column: 2;
+    padding: 10px;
+  }
+  .block-3{
+    grid-column: 3;
+    padding: 10px;
+  }
+  
+   /*-----------*/
+   .important-info{ 
+    grid-column: 1;
+    font-weight: bold;
+  }
+  /*----icon---*/
+  .weather-icon,.tittel1
+  {
+    grid-column: 1/4;
+    margin: 0 auto;
+    text-align: center;
+    
+    border-radius: 4px;
+    
+    width: 250px;
+  }
+   /*-------------*/
+  .text{
+    font-family: 'Space Mono', Helvetica, sans-serif;
+    font-size: 14px;
+    color:black;
+    padding: 7px;
+    font-weight: bold;
+    
+  }
+  .ham{
+    font-size: 25px;
+  }
+  /*---button-----*/
+  .switch-button {
+    grid-column: 1 1 1;
+    border-radius: 4px;
+    margin: 0 auto;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    will-change: transform;
+    z-index: 197 !important;
+    cursor: pointer;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    border: 1px solid #efefef;
+    display: inline-block;
+    margin: 100px;
+  }
+  
+  .switch-button-case {
+    display: inline-block;
+    background: none;
+    width: 49%;
+    height: 100%;
+    color: #efefef;
+    position: relative;
+    border: none;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 1px;
+  }
+  
+  .switch-button-case:hover {
+    color: #151515;
+    cursor: pointer;
+  }
+  
+  .switch-button-case:focus {
+    outline: none;
+  }
+  
+  .active {
+    position: absolute;
+    color: #151515;
+    background-color: #efefef;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transition: .3s ease-out all;
+    transition: .3s ease-out all;
+  }
+  
+  .switch-button .active-case {
+    color: #151515;
+  }
+  
+  
