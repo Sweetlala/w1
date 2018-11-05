@@ -87,6 +87,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 $("#graphic").html('<img src="' + icon + '"/>');
                 $('#description').html(weatherData.weather[0].description);
+               // change the background
+                $("body").css("background-image", "(img/img" + weatherData.weather[0].icon + ".jpg" + ")");
                 $('#city').html(weatherData.name);
                 // if clear skys
                 // $(body).css("backg,url/img/1")
